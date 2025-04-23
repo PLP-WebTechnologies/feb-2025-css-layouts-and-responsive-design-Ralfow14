@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Example</title>
+    <link rel="styles" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">FlexGrid</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to FlexGrid</h1>
+        <p>A responsive webpage showcasing CSS Flexbox and Grid layout techniques with media queries for different screen sizes.</p>
+    </div>
+    
+    <!-- Main Content using Grid -->
+    <div class="main-content">
+        <h2>Our Services</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>We create beautiful, responsive websites that look amazing on any device. Our designs focus on user experience and conversion optimization.</p>
+            </div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Our development team builds robust applications with clean, efficient code. We use the latest technologies to ensure your website is fast and secure.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>Get found online with our search engine optimization services. We'll help your site rank higher in search results and drive more organic traffic.</p>
+            </div>
+            <div class="card">
+                <h3>Content Creation</h3>
+                <p>Engaging content is key to keeping visitors on your site. Our content team creates compelling copy that tells your story and converts visitors.</p>
+            </div>
+            <div class="card">
+                <h3>E-commerce Solutions</h3>
+                <p>From product catalogs to payment processing, we build e-commerce sites that make selling online simple and profitable for your business.</p>
+            </div>
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>Grow your online presence with our comprehensive digital marketing strategies. We offer social media management, email marketing, and more.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FlexGrid. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>  
+   
